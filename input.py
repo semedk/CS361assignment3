@@ -1,5 +1,6 @@
 # My Currency Converter Project
 
+
 currencyin = "N/A"
 currencyout = "N/A"
 theinput = 0
