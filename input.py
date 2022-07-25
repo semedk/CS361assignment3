@@ -1,5 +1,6 @@
 # My Currency Converter Project
 
+import pika
 
 currencyin = "N/A"
 currencyout = "N/A"
@@ -85,6 +86,26 @@ while True:
 		print("Currencies Avaialble are listed below...")
 		print(currency)
 	elif int(number) == 7:
-		break
+		connection = pika.BlockingConnection(
+		pika.ConnectionParameters(host='localhost'))
+		channel = connection.channel()
+
+		channel.queue_declare(queue='hello')
+
+		# Sending Message Currency In --> Currency Out --> Input Amount
+		channel.basic_publish(exchange='', routing_key='hello', body=currencyin)
+		channel.basic_publish(exchange='', routing_key='hello', body=currencyout)
+		channel.basic_publish(exchange='', routing_key='hello', body=str(theinput))
+
+		# Recieve Conversion and print
+
+		def callback(ch, method, properties,body):
+			print("Conversion is: %r", body)
+
+		channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+
+		channel.start_consuming()
+
+		connection.close()
 	else:
 		print("Invalid Input")
