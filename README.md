@@ -16,3 +16,6 @@ Once you're finished, enter in 7 to submit those values.
 Hitting 7 will effectively be you 'requesting' for the currency conversion amount.
 In order to 'recieve' all you would need to do is wait until the currency conversion is done and the message is sent.
 You can look at output.py and see a confirmation message to also verify that the message is being sent after awaiting.
+
+![image](https://user-images.githubusercontent.com/108033475/180916017-e38dfda4-4a53-4edd-a40d-03326c7a49cf.png)
+
