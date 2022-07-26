@@ -13,9 +13,11 @@ You'll know if you've gotten through all of them by seeing what values are displ
 replace this with actual currencie abbrevations and a number)
 
 Once you're finished, enter in 7 to submit those values.
+![image](https://user-images.githubusercontent.com/108033475/180931400-b1d80777-54e5-48d5-b2da-cbdcf724d194.png)
+
 Hitting 7 will effectively be you 'requesting' for the currency conversion amount.
 In order to 'recieve' all you would need to do is wait until the currency conversion is done and the message is sent.
-You can look at output.py and see a confirmation message to also verify that the message is being sent after awaiting.
+You can look at output.py and see a confirmation message to also verify that the message is being sent after waiting.
 
 UML Sequence Diagram:
 ![image](https://user-images.githubusercontent.com/108033475/180929808-16c9d30c-d62f-4ebc-8677-3edd3005dcae.png)
