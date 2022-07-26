@@ -17,3 +17,7 @@ Hitting 7 will effectively be you 'requesting' for the currency conversion amoun
 In order to 'recieve' all you would need to do is wait until the currency conversion is done and the message is sent.
 You can look at output.py and see a confirmation message to also verify that the message is being sent after awaiting.
 
+UML Sequence Diagram:
+![image](https://user-images.githubusercontent.com/108033475/180929808-16c9d30c-d62f-4ebc-8677-3edd3005dcae.png)
+
+
