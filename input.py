@@ -45,8 +45,18 @@ class Client(object):
 currencyin = "N/A"
 currencyout = "N/A"
 theinput = 0
-currency = ["U.S. Dollar (USD)", "European Euro (EUR)", "Japanese Yen (JPY)"]
-currencyabb = ["USD", "EUR", "JPY"]
+currency = ["U.S. Dollar (USD)", "European Euro (EUR)", "Japanese Yen (JPY)", "Sterling (GBP)", 
+"Australian Dollar (AUD)", "Canadian Dollar (CAD)", "Swiss franc(CHF)", "Renminbi(CNY)", "Hong Kong Dollar(HKD)",
+"New Zealand Dollar(NZD)", "Swedish Krona (SEK)", "South Korean won (KRW)", "Singapore Dollar (SGD)", "Norwegian Krone(NOK)",
+"Mexican Peso (MXN)", "Indian Rupee(INR)", "Russian ruble (RUB)", "South African rand (ZAR)", "Turkish Lira(TRY)",
+"Brazilian Real (BRL)", "New Taiwan Dollar (TWD)", "Danish Krone (DKK)", "Polish Zloty (PLN)", 
+"Thai Baht (THB)", "Indonesian Rupiah (IDR)", "Hungarian Forint (HUF)", "Czech Koruna (CZK)", 
+"Israeli new shekel (ILS)", "Chilean Peso (CLP)", "Philippine Peso (PHP)"]
+
+currencyabb = ["USD", "EUR", "JPY", "GBP", "AUD", "CAD", "CHF", 
+"CNY", "HKD", "NZD", "SEK", "KRW", "SGD", "NOK", "MXN", "INR", "RUB",
+"ZAR", "TRY", "BRL", "TWD", "DKK", "PLN", "THB", "IDR", "HUF", "CZK", 
+"ILS", "CLP", "PHP"]
 
 
 # Main Code
