@@ -1,3 +1,6 @@
+This project involves using a communication channel between a Server and a Client through the use
+of RabbitMQ in order to create a currency converter.
+
 Before running my code, you will need to install certain applications...
 1. Do pip3 install pika
 2. Do pip install --user currencyconverter
